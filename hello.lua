@@ -152,7 +152,7 @@ local enterDialogue = {
 --when u enter the dungeon
 print("Everything made by Oshie")
 print("Welcome to The Dungeon! In this game, you fight off monsters and see how far you can get. \n Heres how to play: pick a door and you will encounter an enemy! Use Attack or Heal strategically to take them down!")
-print("If you would like to read the game controls, type 'Help'. if not, tyoe 'No'.")
+print("If you would like to read the game controls, type 'Help'. if not, type 'No'.")
 playerInput = io.read():upper()
 repeat
 if playerInput == "HELP" then
@@ -161,7 +161,7 @@ if playerInput == "HELP" then
     print("Heal/H        Heals the player.")
     print("Run/R         Runs away. (Not available yet.)")
 elseif playerInput == "NO" then
-    
+    print("Alright then. Enjoy!")
 end
 until playerInput == "HELP" or playerInput == "NO"
 
